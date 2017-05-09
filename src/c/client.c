@@ -178,7 +178,7 @@ int main(int argc, char **argv) {
       }
       else if(msgBytes == CLOSE_SOCKET){
         terminate = 1;
-        fprintf(stdout, "Error closing the socket\n");
+        fprintf(stdout, "Closing the socket\n");
         continue;
       }
 
@@ -196,7 +196,7 @@ int main(int argc, char **argv) {
       writeFlag = 1;
 
       if(msgBytes < 0){
-        perror("Something went wrong with the server");
+        perror("Closing the socket\n");
         terminate = 1;
       }
     }

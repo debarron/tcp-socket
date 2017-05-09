@@ -1,9 +1,16 @@
 Hello world,My name is Daniel and
+
 I want to try this example, and see if
 it is possible to send the text file to
 the server with out any trouble.Wish me luck!
 
+
 Daniel
+
+
+
+>> A Friendly message from the server
+
 
 
 >> A Friendly message from the server

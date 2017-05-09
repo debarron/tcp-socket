@@ -78,10 +78,17 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
 
 # Main cycle
 if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("USAGE:")
+        print("server.py HOST_IP PORT")
+        sys.exit()
+
     sys.tracebacklimit = None
+    HOST = sys.argv[1]
+    PORT = int(sys.argv[2])
 
     # TODO Change the port and ip
-    HOST, PORT = "localhost", 9999
+    # HOST, PORT = "localhost", 9999
     serverStop = False
 
     # Create the server, binding to localhost on port 9999
